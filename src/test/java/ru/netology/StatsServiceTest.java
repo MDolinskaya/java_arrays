@@ -8,7 +8,7 @@ public class StatsServiceTest {
     public void calculateTotalSum () {
         StatsService service = new StatsService();
 
-        int [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
         int expectedSum = 180;
         int actualSum = service.totalSum(sales);
@@ -20,7 +20,7 @@ public class StatsServiceTest {
     public void calculateAverageSales () {
         StatsService service = new StatsService();
 
-        int [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
         int expectedAverage = 15;
         int actualAverage = service.averageSales(sales);
@@ -32,7 +32,7 @@ public class StatsServiceTest {
     public void findMinSales () {
         StatsService service = new StatsService();
 
-        int [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
         int expectedDay = 9;
         int actualDay = service.minSales(sales);
@@ -44,7 +44,7 @@ public class StatsServiceTest {
     public void findMaxSales () {
         StatsService service = new StatsService();
 
-        int [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
         int expectedDay = 8;
         int actualDay = service.maxSales(sales);
@@ -56,7 +56,7 @@ public class StatsServiceTest {
     public void findLowerAverageMonths () {
         StatsService service = new StatsService();
 
-        int [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
         int expectedCount = 5;
         int actualCount = service.lowerAverage(sales);
@@ -68,7 +68,7 @@ public class StatsServiceTest {
     public void findHigherAverageMonths () {
         StatsService service = new StatsService();
 
-        int [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
         int expectedCount = 5;
         int actualCount = service.higherAverage(sales);

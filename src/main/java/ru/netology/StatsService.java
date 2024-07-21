@@ -1,22 +1,22 @@
 package ru.netology;
 
 public class StatsService {
-    public int totalSum(int[] sales) {
+    public int totalSum(long[] sales) {
         int sum = 0;
-        for (int t : sales) {
+        for (long t : sales) {
             sum += t;
         }
         return sum;
     }
 
-    public int averageSales(int[] sales) {
+    public int averageSales(long[] sales) {
         int sum = totalSum(sales);
         int average = sum / sales.length;
 
         return average;
     }
 
-    public int minSales(int[] sales) {
+    public int minSales(long[] sales) {
         int minMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
@@ -27,7 +27,7 @@ public class StatsService {
         return minMonth + 1;
     }
 
-    public int maxSales(int[] sales) {
+    public int maxSales(long[] sales) {
         int maxMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
@@ -38,7 +38,7 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public int lowerAverage(int[] sales) {
+    public int lowerAverage(long[] sales) {
         int average = averageSales(sales);
 
         int countMonths = 0;
@@ -50,7 +50,7 @@ public class StatsService {
         return countMonths;
     }
 
-    public int higherAverage(int[] sales) {
+    public int higherAverage(long[] sales) {
         int average = averageSales(sales);
 
         int countMonths = 0;
