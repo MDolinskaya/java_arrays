@@ -10,8 +10,8 @@ public class StatsServiceTest {
 
         long [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
-        int expectedSum = 180;
-        int actualSum = service.totalSum(sales);
+        long expectedSum = 180;
+        long actualSum = service.totalSum(sales);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
@@ -22,8 +22,8 @@ public class StatsServiceTest {
 
         long [] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
-        int expectedAverage = 15;
-        int actualAverage = service.averageSales(sales);
+        long expectedAverage = 15;
+        long actualAverage = service.averageSales(sales);
 
         Assertions.assertEquals(expectedAverage, actualAverage);
     }
